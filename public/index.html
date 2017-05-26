@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>D3 World Map</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    </head>
+    <body >
+        <header>Obesity and Overweighted visualization</header>
+        <article id="conditions">
+            <label>Select year from 1990 to 2013: </label>
+            <select id="yearDropdown" class="droplist" onchange="updateMap('year', this.value)"></select>
+            <label>Select age group: </label>
+            <select id="ageDropdown" class="droplist" onchange="updateMap('age',this.value)"></select>
+            <label>Select sex: </label>
+            <select id="sexDropdown" class="droplist" onchange="updateMap('sex',this.value)"></select>
+        </article>
+        <p id = "instruction">Click on specific country for more details</p>
+        </article>
+        <article>
+            <section id="worldMapContainer"></section> 
+            <section id="countryContainer"></section>
+            <section id="continentsContainer"></section>
+        </article>
+
+        <footer>
+            <p>Data resource from: Institute for Health Metrics and Evaluation (IHME)</p>
+        </footer>
+
+        <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+        <script type="text/javascript" src="https://d3js.org/queue.v1.min.js"></script>
+        <script type="text/javascript" src="https://d3js.org/topojson.v0.min.js"></script>
+        <script type="text/javascript" src="https://d3js.org/d3-color.v1.min.js"></script>
+        <script type="text/javascript" src="https://d3js.org/d3-array.v1.min.js"></script>
+        <script type="text/javascript" src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+        <script type="text/javascript" src="https://d3js.org/d3-collection.v1.min.js"></script>
+        <script type="text/javascript" src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script type="text/javascript" src="map.js"></script>
+
+    </body>
+</html>

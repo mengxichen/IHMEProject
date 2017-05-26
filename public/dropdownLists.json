@@ -1,0 +1,214 @@
+[
+	{
+		"yearDropDown":
+		{
+			"start" : 1990,
+			"end" : 2013
+		}
+	},
+	{
+		"ageDropDown":[
+		 {
+		   "id": 34,
+		   "value": "2 to 4 yrs"
+		 },
+		 {
+		   "id": 36,
+		   "value": "2 to 19 yrs, age-standardized"
+		 },
+		 {
+		   "id": 6,
+		   "value": "5 to 9 yrs"
+		 },
+		 {
+		   "id": 7,
+		   "value": "10 to 14 yrs"
+		 },
+		 {
+		   "id": 8,
+		   "value": "15 to 19 yrs"
+		 },
+		 {
+		   "id": 9,
+		   "value": "20 to 24 yrs"
+		 },
+		 {
+		   "id": 38,
+		   "value": "20+ yrs, age-standardized"
+		 },
+		 {
+		   "id": 10,
+		   "value": "25 to 29 yrs"
+		 },
+		 {
+		   "id": 11,
+		   "value": "30 to 34 yrs"
+		 },
+		 {
+		   "id": 12,
+		   "value": "35 to 39 yrs"
+		 },
+		 {
+		   "id": 13,
+		   "value": "40 to 44 yrs"
+		 },
+		 {
+		   "id": 14,
+		   "value": "45 to 49 yrs"
+		 },
+		 {
+		   "id": 15,
+		   "value": "50 to 54 yrs"
+		 },
+		 {
+		   "id": 16,
+		   "value": "55 to 59 yrs"
+		 },
+		 {
+		   "id": 17,
+		   "value": "60 to 64 yrs"
+		 },
+		 {
+		   "id": 18,
+		   "value": "65 to 69 yrs"
+		 },
+		 {
+		   "id": 19,
+		   "value": "70 to 74 yrs"
+		 },
+		 {
+		   "id": 20,
+		   "value": "75 to 79 yrs"
+		 },
+		 {
+		   "id": 21,
+		   "value": "80+ yrs"
+		 }
+		]
+	},
+	{
+		"sexDropDown":[
+		{"id":1,
+		"value":"male"},
+		{"id":2,
+		"value":"female"},
+		{"id":3,
+		"value":"both"}
+		]
+	},
+{
+	"continentDropDown":[
+	 {
+	   "id": "R1",
+	   "value": "High-income Asia Pacific"
+	 },
+	 {
+	   "id": "R10",
+	   "value": "Western Europe"
+	 },
+	 {
+	   "id": "R11",
+	   "value": "Andean Latin America"
+	 },
+	 {
+	   "id": "R12",
+	   "value": "Central Latin America"
+	 },
+	 {
+	   "id": "R13",
+	   "value": "Southern Latin America"
+	 },
+	 {
+	   "id": "R14",
+	   "value": "Tropical Latin America"
+	 },
+	 {
+	   "id": "R15",
+	   "value": "North Africa and Middle East"
+	 },
+	 {
+	   "id": "R16",
+	   "value": "High-income North America"
+	 },
+	 {
+	   "id": "R17",
+	   "value": "Oceania"
+	 },
+	 {
+	   "id": "R18",
+	   "value": "Central Sub-Saharan Africa"
+	 },
+	 {
+	   "id": "R19",
+	   "value": "Eastern Sub-Saharan Africa"
+	 },
+	 {
+	   "id": "R2",
+	   "value": "Central Asia"
+	 },
+	 {
+	   "id": "R20",
+	   "value": "Southern Sub-Saharan Africa"
+	 },
+	 {
+	   "id": "R21",
+	   "value": "Western Sub-Saharan Africa"
+	 },
+	 {
+	   "id": "R3",
+	   "value": "East Asia"
+	 },
+	 {
+	   "id": "R4",
+	   "value": "South Asia"
+	 },
+	 {
+	   "id": "R5",
+	   "value": "Southeast Asia"
+	 },
+	 {
+	   "id": "R6",
+	   "value": "Australasia"
+	 },
+	 {
+	   "id": "R7",
+	   "value": "Caribbean"
+	 },
+	 {
+	   "id": "R8",
+	   "value": "Central Europe"
+	 },
+	 {
+	   "id": "R9",
+	   "value": "Eastern Europe"
+	 },
+	 {
+	   "id": "S1",
+	   "value": "High-income"
+	 },
+	 {
+	   "id": "S2",
+	   "value": "Central Europe, Eastern Europe, and Central Asia"
+	 },
+	 {
+	   "id": "S3",
+	   "value": "Sub-Saharan Africa"
+	 },
+	 {
+	   "id": "S4",
+	   "value": "North Africa and Middle East"
+	 },
+	 {
+	   "id": "S5",
+	   "value": "South Asia"
+	 },
+	 {
+	   "id": "S6",
+	   "value": "Southeast Asia, East Asia, and Oceania"
+	 },
+	 {
+	   "id": "S7",
+	   "value": "Latin America and Caribbean"
+	 }]
+}
+]
