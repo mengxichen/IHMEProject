@@ -31,7 +31,7 @@ function convertSex(sex_id){
     }
 }
 
-//usage:
+
 readTextFile(dropdownPath, function(text){
     myObj = JSON.parse(text);
     console.log(myObj);
@@ -75,13 +75,10 @@ function selectList(element,obj){
 }
 
 
-var filePath = "data/"+ year + "_" + age + "_" + sex + ".txt";
 
-
-
-console.log(filePath);
 //create map visualization
-
+var filePath = "data/"+ year + "_" + age + "_" + sex + ".txt";
+console.log(filePath);
 
 var projection = d3.geo
     .equirectangular()
@@ -95,20 +92,12 @@ var svg = d3.select("#worldMapContainer")
     .attr("width", width)
     .attr("height", height)
     .append('g')
-    .call(d3.behavior.zoom().scaleExtent([1,8]).on("zoom", zoom));
-
-
-function zoom(){
-    svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale +")");
-}
-
 
 var path = d3.geo
     .path()
     .projection(projection);
 
 createMap(filePath);
-
 
 function updateMap(attr,value){
     if(attr === 'year'){
@@ -124,8 +113,6 @@ function updateMap(attr,value){
     console.log('year_' + year +'_age_' + age + '_sex_' + sex);
     d3.select("#countryContainer").selectAll("*").remove();
     console.log('year after update:' + year);
-
-
 
 }
 
@@ -168,6 +155,8 @@ function createMap(filePath){
 
     }
 
+
+    //draw world map using countries.geojson
     function worldMap(){
         var color_domain = [10, 20, 30, 40, 50, 60, 70, 80, 90]
         var ext_color_domain = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
@@ -212,8 +201,7 @@ function createMap(filePath){
                     .attr("y", function(d, i){ return height - (i*ls_h) - ls_h - 4 - 40;})
                     .text(function(d, i){ return legend_labels[i]; });
 
-
-
+                //create paths
                 g.selectAll("path")
                     .data(json.features)
                     .enter()
