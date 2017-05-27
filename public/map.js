@@ -135,6 +135,7 @@ function createMap(filePath){
         .await(renderMap);
 
     function renderMap(error, d){
+        if (error) return console.warn(error);
         for(var i =0; i<d.length; i++){
             if(! dataByCountry.has(d[i].location)){
                 dataByCountry.set(d[i].location, new Array());
@@ -169,7 +170,8 @@ function createMap(filePath){
         var g = svg.append("g");
 
         d3.json("countries.geojson",
-            function(json) {
+            function(error,json) {
+                if (error) return console.warn(error);
                 //add title
                 g.append("svg:text")
                     .attr("class", "title")
@@ -291,8 +293,8 @@ var yAxis = d3.svg.axis().scale(yScale)
 function clicked(d) {
 
     d3.json('countries/'+d.id+".txt",
-        function(json) {
-
+        function(error, json) {
+            if (error) return console.warn(error);
             d3.select("#countryContainer").selectAll("*").remove();
 
             var histogramSvg =  d3.select("#countryContainer")
