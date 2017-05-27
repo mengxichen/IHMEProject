@@ -311,7 +311,7 @@ function clicked(d) {
                 .attr("x", width_histogram / 2 )
                 .attr("y", 0)
                 .style("text-anchor", "middle")
-                .text(d.id + "'s Obesity and Overweighted bar chart");
+                .text(d.id + "'s Obesity and Overweighted bar chart from 1990 to 2013");
 
 
 
